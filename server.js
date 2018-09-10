@@ -65,6 +65,13 @@ app.get('/about', (req, resp) => {
   });
 });
 
+// Projects Route
+app.get('/projects', (req, resp) => {
+  resp.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
+
 // Bad Route
 app.get('/bad', (req, resp) => {
   resp.send({
